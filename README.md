@@ -2,7 +2,8 @@
 This application allows a user to generate a random password based on criteria they've selected.
 
 # Deployed App
-Link to Deployed Application created with React
+Link to Deployed Application created with React:
+https://tasshroll.github.io/password-gen/
 
 
 Link to Deployed Application created without React
