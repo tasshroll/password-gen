@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# password-gen
+This application allows a user to generate a random password based on criteria they've selected.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Deployed App
+Link to Deployed Application created with React
 
-## Available Scripts
 
-In the project directory, you can run:
+Link to Deployed Application created without React
+https://tasshroll.github.io/passworddds/
 
-### `npm start`
+Screenshot of application creating a password of length 90 characters with only lowercase letters.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot](Assets/Password-screenshot.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This Application will generate a random password based on user criteria selected. The random password is displayed in the text area. 
+Character strings will build a valid character set based on user input. Users are asked what password length they desire. Password length must be between 8 and 128 characters long. Users are asked what type of characters to include. 
+Character Choices are :
 
-### `npm run build`
+* `lowercase a-z`, 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `uppercase A-Z`, 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* `numbers 0-9`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `special characters "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"` 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project was created with create-react-app. React is a front-end library developed by Facebook. It's used for building interactive user interfaces efficiently with significantly less code that with vanilla JavaScript. The Password component is the interface to the applications entire user interface.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run, use the deployed link at:
 
-## Learn More
+Or on command line of visual studio, type
+```
+    npm run start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will prompt you to view react-passwords in the browser at localhost:3000
+    
+## User Story
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
+```
 
-### Code Splitting
+## Acceptance Criteria
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
